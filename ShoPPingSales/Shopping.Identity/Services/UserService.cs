@@ -19,7 +19,7 @@ namespace Shopping.Identity.Services
             _userManager = userManager;
         }
 
-        public async Task<Utilisateur> GetEmployee(string userId)
+        public async Task<Utilisateur> GetUtilisateur(string userId)
         {
             var utilisateur = await _userManager.FindByIdAsync(userId);
             return new Utilisateur
@@ -31,7 +31,7 @@ namespace Shopping.Identity.Services
             };
         }
 
-        public async Task<List<Utilisateur>> GetEmployees()
+        public async Task<List<Utilisateur>> GetUtilisateurs()
         {
             var employees = await _userManager.GetUsersInRoleAsync("Employee");
             return employees.Select(q => new Utilisateur

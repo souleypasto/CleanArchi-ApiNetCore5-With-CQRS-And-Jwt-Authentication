@@ -25,7 +25,13 @@ namespace Shopping.Identity.Configurations
                     Id = "cbc43a8e-f7bb-4445-baaf-1add431ffbbf",
                     Name = "Administrator",
                     NormalizedName = "ADMINISTRATOR"
-                }
+                },
+                 new IdentityRole
+                 {
+                     Id = "cac43a6e-f7bb-4450-baaf-1add431ccbbf",
+                     Name = "Gestionaire",
+                     NormalizedName = "GESTIONAIRE"
+                 }
             );
         }
     }

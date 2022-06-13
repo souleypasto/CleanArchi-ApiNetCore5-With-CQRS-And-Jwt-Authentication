@@ -26,7 +26,7 @@ namespace ShoppingMain.APi.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<RegistrationResponse>> Register(RegistrationRequest request)
         {
-            return Ok(await _authenticationService.Register(request));
+            return Ok(await _authenticationService.Register(request, "Employee"));
         }
     }
 }

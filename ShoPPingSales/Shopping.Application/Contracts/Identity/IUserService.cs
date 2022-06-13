@@ -9,7 +9,7 @@ namespace Shopping.Application.Contracts.Identity
 {
     public interface IUserService
     {
-        Task<List<Utilisateur>> GetEmployees();
-        Task<Utilisateur> GetEmployee(string userId);
+        Task<List<Utilisateur>> GetUtilisateurs();
+        Task<Utilisateur> GetUtilisateur(string userId);
     }
 }
